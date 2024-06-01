@@ -28,17 +28,17 @@ try {
   $mail->SMTPAuth   = true;
 
   // Настройки почты отправителя
-  $mail->Host       = 'smtp.yandex.com'; // SMTP сервера вашей почты
-  $mail->Username   = 'stellazaburunova@yandex.ru'; // Логин на почте
-  $mail->Password   = 'afxiyqwxxgabehav'; // Пароль на почте
-  $mail->SMTPSecure = 'ssl';
-  $mail->Port       = 465;
+  $mail->Host       = ''; // SMTP сервера вашей почты
+  $mail->Username   = ''; // Логин на почте
+  $mail->Password   = ''; // Пароль на почте
+  $mail->SMTPSecure = '';
+  $mail->Port       = ;
 
-  $mail->setFrom('stellazaburunova@yandex.ru', 'Заявка с сайта'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('', 'Заявка с сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('stellazaburunova@yandex.ru');
-  $mail->addAddress('zaburunovdaniil@yandex.ru');
+  $mail->addAddress('');
+  $mail->addAddress('');
   // Отправка сообщения
   $mail->isHTML(true);
   $mail->Subject = $title;
