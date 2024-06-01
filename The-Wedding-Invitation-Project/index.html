@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Отправка заявки на почту</title>
+  <link rel="stylesheet" href="/css/nullStyle.css">
+  <link rel="stylesheet" href="/css/responce740.css">
+  <link rel="stylesheet" href="/fonts/fonts.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header class="header">
+      <h1 class="header__title">Артём &amp; Стелла</h1>
+      <div class="header__line"></div>
+      <p class="header__num__text">12/07</p>
+      <img src="./img/Стелла на песке.jpg" alt="" class="header__photo">
+    </header>
+    <main class="main">
+      <article class="invitation">
+        <h2 class="invitation__text__title">ДОРОГИЕ <br> РОДНЫЕ И БЛИЗКИЕ!</h2>
+        <p class="invitation__text__bottom">Приглашаем вас разделить с нами <br>счастливый день, в котором<br> мы станем
+          семьей!</p>
+        <div class="invation__img__heart"></div>
+      </article>
+      <article class="time__event">
+        <h2 class="time__event__text_title">ТАЙМИНГ</h2>
+        <div class="main__line"></div>
+        <!-- <p class="time__event__main_text">Просим вас прибыть за час до начала церемонии, чтобы провести памятную
+          фотосессию!</p> -->
+        <div class="time__event__flex-box">
+          <p class="flex__text">11:30</p>
+          <p class="flex__text">Регистрация</p>
+        </div>
+        <div class="flex_line"></div>
+        <p class="text__event__text">Дворец бракосочетания 1</p>
+        <div class="time__event__flex-box">
+          <p class="flex__text">17:00</p>
+          <p class="flex__text">Банкет</p>
+        </div>
+        <div class="flex_line"></div>
+        <p class="text__event__text">Танцы, веселье и много любви</p>
+        <div class="time__event__flex-box">
+          <p class="flex__text">23:00</p>
+          <p class="flex__text">Завершение вечера</p>
+        </div>
+        <div class="flex_line"></div>
+        <p class="text__event__text">Провожаем этот прекрасный день!</p>
+      </article>
+      <article class="dresscode">
+        <!-- <h2 class="dresscode__text_title">ДРЕСС-КОД</h2>
+        <div class="main__line"></div> -->
+        <p class="dresscode__text"></p>
+        <div class="dresscode__gamma_img"></div>
+        <!-- Вставить фото цветовой гамы или точного дрескода  -->
+      </article>
+      <article class="location">
+        <h2 class="location__text_title">ЛОКАЦИЯ</h2>
+        <div class="main__line"></div>
+        <p class="location__text_name_place">Наше торжество пройдёт<br> в банкентном зале "Лукум"</p>
+        <p class="location__text_address_place">по адресу: АО, г. Астрахань,<br> Боевая улица, 2.</p>
+        <div class="location__img"></div>
+
+        <h2 class="location__sub_text">КАК ДОБРАТЬСЯ?</h2>
+        <a class="location__button" href="https://yandex.ru/maps/-/CDbLm0-s">
+          <div class="location__flex">
+            <p class="location__button_text">Посмотреть на карте</p>
+          </div>
+        </a>
+      </article>
+      <article class="contacts">
+        <h2 class="text__title">КОНТАКТЫ</h2>
+        <div class="main__line"></div>
+        <p class="contacts__text">Если у вас появятся <br>вопросы по мероприятию,<br> обращайтесь по номеру.</p>
+        <p class="contacts__name">Стелла - 7 927 280-84-43</p>
+      </article>
+      <div class="invation__img__heart"></div>
+      <article class="form_card">
+        <h2 class="form__text_title">ПОЖАЛУЙСТА, <br>ПОДТВЕРДИТЕ СВОЁ <br>ПРИСУТСТВИЕ</h2>
+        <p class="form__text_centre">Ваши ответы помогут нам <br>при организации нашего торжества.</p>
+        <p class="form__text_bottom">Мы будем ждать от вас ответ до 20/06</p>
+      </article>
+    </main>
+
+
+    <form action="/mail.php" id="form" class="form" autocomplete="off">
+      <div class="form__input-box">
+        <!-- <h2 class="form__bottom__text__title">ПРИСУТСТВИЕ НА ТОРЖЕСТВЕ</h2> -->
+        <input class="form__input-inp" type="text" id="name" name="name" placeholder="Фамилия и имя" autocomplete="off">
+      </div>
+
+      <div class="form__input-box">
+        <input class="form__input-inp" type="tel" id="tel" name="tel" placeholder="+7(___) ___-__-__"
+          autocomplete="off">
+      </div>
+
+      <p class="form__bottom__text__lower">Пожалуйста, отправьте нам ответ и укажите, будете ли вы присутствовать и ваши
+        предпочтения к напиткам:
+        вино красное; вино белое; игристое вино; водка; коньяк; самогон.</p>
+
+
+      <div class="form__input-box">
+        <textarea class="form__input-inp" name="msg" id="msg" placeholder="Ваш ответ"></textarea>
+      </div>
+      <div class="button__flex">
+        <button class="form__btn" type="submit">Отправить сообщение</button>
+      </div>
+    </form>
+    <!-- <footer class="footer">
+      <div class="footer__polaroid">
+        <p class="footer__text">Артём, Стелла 12/07</p>
+        <img class="footer__img" src="./img/Артём и Стелла 2.jpg" alt="">
+      </div>
+
+    </footer> -->
+
+  </div>
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/just-validate.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
